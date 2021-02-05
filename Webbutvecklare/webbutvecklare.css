@@ -1,0 +1,612 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:'Courier New', Courier, monospace;
+  background-color: #90d5ec;
+  background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+  color:indigo;
+  padding: 0;
+  margin: 0;
+}
+
+#mainNav .logo img {
+  border-radius: 50%;
+  border: 1px solid peachpuff;
+  height: 84px;
+  transition: height 0.4s;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: inherit;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: indigo;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn { 
+  border: none;
+  outline: none;
+  color: chartreuse;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-size: 18px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: darkmagenta;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: inherit;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px peachpuff (0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: indigo;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: inherit;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.bg-darkmagenta {
+  background-color: darkmagenta !important;
+}
+
+.txt-peachpuff a {
+  color: peachpuff !important;
+}
+
+#mainNav {
+  display: flex;
+  justify-content:space-between;
+  padding: 0px 16px;
+  position: fixed;
+  width: 100%;
+   top: 0px;
+  background-color: darkmagenta;
+  transition: background 0.4s;
+}
+
+#mainNav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 1400px;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+#mainNav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: chartreuse;
+  font-weight: 500;
+  transition: color 0.4s;
+}
+
+.logo image {
+  border-radius: 50%;
+  height: 50px;
+  border: 1px solid peachpuff;
+}
+
+.mydiv {
+  margin: 70px;
+  padding-top: 70px;
+}
+
+h1 {
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+p {
+  text-align: justify;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  word-spacing: normal;
+  line-height: 50px;
+}
+
+.mydiv1 {
+  margin-left: 70px;
+}
+
+h2 {
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+.fa-exclamation {
+  color: darkred;
+}
+
+.one {
+  text-align: justify;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  word-spacing: normal;
+  line-height: 50px;
+  margin-left: 100px;
+}
+
+.two {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: indigo;
+  margin-left: 15px;
+  text-align: left;
+}
+
+address {
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: indigo;
+}
+
+h3 {
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: indigo;
+}
+
+h4 {
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: indigo;
+}
+
+sub {
+  font-size: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: indigo;
+}
+
+.dropdownbutton {
+  background-color: inherit;
+  color: indigo;
+  border: none;
+  cursor:pointer;
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+  font-size: 19px;
+  padding: 5px;
+}
+
+.dropdownmenu {
+  border: 1px solid peachpuff;
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.dropdown-contents {
+  display: none;
+  position: absolute;
+  background-color: plum;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px peachpuff (0,0,0,0.2);
+  padding: 10px 12px;
+  z-index: 1;
+  justify-content: plum;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.dropdown-contents a {
+  color: indigo;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.small {
+  text-align: justify;
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: indigo;
+}
+
+.dropdown-contents a:hover {
+  background-color: palevioletred;
+}
+
+.dropdownmenu:hover .dropdown-contents {
+  display: block;
+}
+
+.dropdownmenu:hover .dropdownbutton {
+  background-color: plum;
+}
+
+.button {
+  border: 1px solid peachpuff;
+  border-radius: 200px;
+  padding: 14px 28px;
+  background-color: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  color: indigo;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid peachpuff;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=skicka meddelande] {
+  background-color: plum;
+  color: indigo;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=skicka meddelande] :hover {
+  background-color: plum;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: plum;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.col-25 {
+  float: left;
+  width: 100%;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.col-75 {
+  float: left;
+  width: 100%;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media only screen and (max-width: 600px) {
+      .col-25, .col-75, input[type=skicka meddelande] {
+          width: 100%;
+          margin-top: 0;
+      }
+  }    
+
+input {
+  background-color: inherit;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: indigo;
+  border-radius: 50px;
+  border: 1px solid peachpuff;
+  padding: 5px;
+  text-align: center;  
+}
+
+textarea {
+  background-color: inherit;
+}
+
+/* On mouse-over */
+.button1:hover {
+  background-color: chartreuse;
+}
+
+.button1 {
+  padding: 20px;
+  color: indigo;
+  background-color: inherit;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  border-radius: 10px;
+  border-style: solid;
+  border: 1px solid peachpuff;
+  text-align: center;
+}
+
+.ansök {
+text-align: center;
+}
+
+.webbimage {
+  text-align: center;
+}
+
+.buttons {
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 20px;
+padding: 163px;
+}
+
+.fa-angle-double-left {
+margin-right: 495px;
+}
+
+.fa-house-user {
+margin-right: 460px;
+}
+
+.fa-angle-double-right {
+margin-right: inherit;
+}
+
+footer {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-color: inherit;
+  color: indigo;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 10px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background-color: #90d5ec;
+  background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/*RESPONSIVE PART BEGINS FOR MOBILE DEVICES*/
+@media only screen and (max-width:560px) {
+  #mainNav {
+    height: 23%;
+    padding-top: 2px;
+    padding-right: 2px;
+    margin: 0;
+    width: 100%;
+   }
+
+   .logo img {
+     margin-top: 35px;
+   }
+
+   #mainNav ul {
+    display: grid;
+    padding: 0;
+    margin-bottom: 2px;
+  }
+
+  #mainNav ul li a {
+    font-size: 10px;
+    text-align: right;
+    padding-left: 0px;
+    margin-right: 150px;
+  }
+  
+  .dropdown-content a {
+    padding: 6px 10px;
+    text-align: right;
+  }
+
+  .dropdown .dropbtn { 
+    padding: 4px 8px;
+    font-size: 10px;
+    margin-left: 150px;
+  }
+
+  .responsive {
+    border: none;
+    width: 60%;
+  }
+
+  .image1 {
+    border: none;
+  }
+
+  .mydiv {
+    margin: 10px;
+    padding-top: 180px;
+  }
+  
+  h1 {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    line-height: 15px;
+  }
+  
+  .mydiv1 {
+   margin-top: 10px;
+   margin-left: 10px;
+
+  }
+  
+  h2 {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+  
+  .one {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    line-height: 15px;
+    margin-left: 40px;
+  }
+  
+  .two {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  
+  address {
+    font-size: 10px;
+  }
+  
+  h3 {
+    font-size: 12px;
+  }
+  
+  h4 {
+    font-size: 12px;
+  }
+  
+  sub {
+    font-size: 9px;
+  }
+  
+  .dropdownbutton {
+    font-size: 15px;
+    padding: 3px;
+  }
+
+  .button1 {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .buttons {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .fa-angle-double-left {
+    margin-right: 5px;
+  }
+  
+  .fa-house-user {
+    margin-right: 5px;
+  }
+
+  footer {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 11px;
+  }
+}
+
+/*RESPONSIVE PART BEGINS FOR LARGER DEVICES*/
+@media only screen and (max-width:1000px) {
+  #mainNav ul li a {
+    font-size: 13px;
+    text-align: right;
+    padding: 2.5px;
+    margin: 0;
+  }
+
+  .dropdown .dropbtn { 
+    padding: 6px 10px;
+    font-size: 13px;
+  }    
+
+  .fa-angle-double-left {
+    margin-right: 100px;
+  }
+  
+  .fa-house-user {
+    margin-right: 100px;
+  }
+  }
